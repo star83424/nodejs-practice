@@ -1,0 +1,35 @@
+:root{
+    --bg-color-root : lightblue;
+
+}
+body {
+    /* background-color: var(--bg-color, rgb(242, 243, 183)) */
+    background-image: url('../dam/bird_icon.jpg');
+    /* background-repeat:
+        repeat-x ==> horizontally
+        repeat-y ==> vertically
+        no-repeat ==> only one
+     */
+     background-repeat: repeat-y;
+     /* background-scroll:
+        scroll ==> background moved with scrolling
+        fixed ==> fixed
+     */
+     background-attachment: scroll;
+     background-position: right top;
+     background: url('../dam/bird_icon.jpg') repeat-y scroll top;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+p {
+    background: var(--bg-color, #369);
+}
+
+template-default {
+    --bg-color: #d9444a;
+}
+  
