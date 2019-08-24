@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <style>
+
+    </style>
     <link href="../css/main.css" rel="styleSheet" type="text/css">
 </head>
 
@@ -13,9 +16,33 @@
     <template-default>
         <p>我會繼承 template-default 的 --bg-color 設定，所以背景是紅色</p>
     </template-default>
+    <button class="button2">
+            <span href="#" class="innerButton">
+                 button text
+            </span>
+      </button>
+    <h2>Animated Button</h2>
+    <div class="time-line">
+        <a class="time-period-button"><span>高中</span></a>
+        <a class="time-period-button"><span>大學</span></a>
+        <a class="time-period-button"><span>研究所</span></a>
+        <a class="time-period-button"><span>IBM Taiwan</span></a>
+    </div>
 
+    <button class="button"><span>Hover </span></button>
+    <div>
+        <span>
+            <h2>在div裡面的h2</h2>
+        </span>
+    </div>
+    <p class="applyred applylarge">多重class若property衝突則以style中被定義的順序較後者為主</p>
     <p>因為我不在 tempalte-default 裡面，找不到 --bg-color 這個變數，所以會顯示 fallback 的藍色</p>
-
+    <a href="www.google.com"></a>
 </body>
+
+<script>
+
+
+    </script>
 
 </html>
