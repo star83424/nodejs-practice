@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    </style>
+    <link href="../css/main.css" rel="styleSheet" type="text/css">
+</head>
+
+<body>
+    <div>
+        <h1>Timeline</h1>
+
+        <div class="time-line">
+            <a class="time-period-button"><span>高中</span></a>
+            <a class="time-period-button"><span>大學</span></a>
+            <a class="time-period-button"><span>研究所</span></a>
+            <a class="time-period-button"><span>IBM Taiwan</span></a>
+        </div>
+
+        <!-- <button class="button"><span>Hover </span></button> -->
+
+
+    </div>
+
+
+
+</body>
+
+<script>
+    $('.time-period-button').array.forEach(element => {
+        element.bind("click", ()=>{
+            $('.time-period-button').attr("class", "time-period-button");
+            element.attr("class", "time-period-button-selected");
+        });
+        
+    });
+
+
+</script>
+
+</html>
