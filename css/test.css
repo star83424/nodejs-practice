@@ -1,0 +1,237 @@
+:root{
+    --bg-color-root : lightblue;
+  
+  }
+  body {
+    /* background-color: var(--bg-color, rgb(242, 243, 183)) */
+    background-image: url('../dam/bird_icon.jpg');
+    /* background-repeat:
+        repeat-x ==> horizontally
+        repeat-y ==> vertically
+        no-repeat ==> only one
+     */
+     background-repeat: repeat-y;
+     /* background-scroll:
+        scroll ==> background moved with scrolling
+        fixed ==> fixed
+     */
+     background-attachment: scroll;
+     background-position: right top;
+     background: url('../dam/bird_icon.jpg') repeat-y scroll top;
+  }
+  
+  div h2{
+    color: lightseagreen
+  }
+  
+  .applylarge {
+    font-size: 20px;
+    color: #FFFF00;
+  }
+  
+  .applyred {
+    color: #FF0000;
+  }
+  
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+  /* 
+  p {
+    background: var(--bg-color, #369);
+    border-style: dotted dashed solid double;
+    border-width: 2px 10px 4px 20px;
+  } */
+  
+  template-default {
+    --bg-color: #d9444a;
+  }
+  
+  /* a:link {color:#FF0000; text-decoration:none;} 
+  a:visited {color:#0000FF; text-decoration:none;} 
+  a:hover {font-size:20; color:#00FF00; text-decoration:underline;} 
+  a:active {color:#FF00FF; text-decoration:underline;} */
+  
+  /* card.scss */
+  .card {
+  padding: 20px;
+  }
+  
+  .button {
+    border-radius: 20px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+    
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  button{
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    background-color: #ff6739;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-property: all;
+    font-size: 20px;
+  }
+  
+  button:hover{
+    border-radius: 10px;
+    border: none;
+    color: #ff6739;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-property: all;
+  }
+  
+  button span
+  {
+    position: relative;
+  } 
+  
+  /*while pressing*/
+  
+  button span:hover
+  {
+    cursor: pointer;
+    top: -20px;
+  }
+  
+  
+  a.time-period-button {
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    background-color: #ff6739;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-property: all;
+    font-size: 20px;
+    padding: 4px 6px 4px 6px;
+  }
+  
+  a.time-period-button:hover {
+    border-radius: 10px;
+    border: none;
+    color: #ff6739;
+    background-color: #ffa88e;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-property: all;
+    cursor: pointer;
+  }
+  
+  a.time-period-button-selected {
+    border-radius: 10px;
+    border: none;
+    color: #ff6739;
+    background-color: #ffa88e;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-property: all;
+    cursor: pointer;
+  }
+  
+  a.time-period-button span {
+    position: relative;
+  }
+  
+  a.time-period-button span:hover{
+    top: -25px;
+    font-weight: bold;
+  }
+  
+  .menuButton {
+    position: relative;
+    transition-property: background-color, color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    -webkit-transition-property: background-color, color;
+    -webkit-transition-duration: 1s;
+    -o-transition-property: background-color, color;
+    -o-transition-duration: 1s;
+    text-align: left;
+    background-color: grey;
+    left: 5px;
+    top: 5px;
+    height: 26px;
+    color: white;
+    border-color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    -moz-box-shadow: 2px 2px 1px black;
+    padding: 2px 4px;
+    /* border: solid 1px black; */
+    border: none;
+    margin: 0px 0px 0px 0px;
+  }
+  
+  .menuButton:hover {
+    position: relative;
+    transition-property: background-color, color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    -webkit-transition-property: background-color, color;
+    -webkit-transition-duration: 1s;
+    -o-transition-property: background-color, color;
+    -o-transition-duration: 1s;
+    background-color:white;
+    color:black;
+    -moz-box-shadow: 2px 2px 1px black;
+  }
+
+  .main {
+    display: table;
+    /* background-color: greenyellow; */
+    width: 100%;
+    border-collapse:separate;
+    border-spacing: 50px 10px;
+  }
+  
+  .left {
+    /* background-color: pink; */
+    display: table-cell;
+    width:50%;
+  }
+  
+  .right {
+    /* background-color: blue; */
+    display: table-cell;
+    width:50%;
+  }
+  
