@@ -1,6 +1,6 @@
 *{
   margin: 0px;
-  /* padding: 0px; */
+  padding: 0px;
 }
 
 footer{
@@ -30,7 +30,6 @@ footer{
 
 .footer-info-cell{
   display: table-cell;
-  display: table-cell;
   width:50%;
   /* text-align: center; */
   padding-top: 20px;
@@ -40,26 +39,35 @@ footer{
 }
 
 .body-container{
-  display: table;
+  /* display: table; */
   height: 100vh;
   width: 100vw;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .body-container-left{
-  display:table-cell;
-  width: 900px;
+  /* display:table-cell; */
+  float: left;
+  width: 60vw;
   height: 100%;
+  padding: 0px;
   background-color: #81a3a7;
-  padding-left: 10vw;
+}
+
+.homepage-left-content{
+  padding-left: 8vw;
   padding-top: 30vh;
 }
 
 .body-container-right{
-  display: table-cell;
-  /* float: left; */
+  /* display: table-cell; */
+  float: left;
+  width: 40vw;
   height: 100%;
   background-color: #c3d3da;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+  border: 0px;
 }
 
 .homepage-title{
@@ -70,7 +78,7 @@ footer{
 }
 
 .homepage-desc{
-  font-size: 20px;
+  font-size: 18px;
   color: #585a56;
   padding-bottom: 10px;
 }
@@ -119,5 +127,75 @@ footer{
   /* color:#585A56; */
 }
 
+.three-row-partition{
+  display: block;
+  height: 33.34%;
+  width: 100%;
+}
+.three-row-partition-middle{
+  display: block;
+  height: 33.34%;
+  width: 100%;
+}
+
+.three-col-partition{
+  float: left;
+  width: 33.33%;
+  height: 100%;
+  padding: 0px;
+}
+
+.three-col-partition-middle{
+  float: left;
+  width: 33.34%;
+  height: 100%;
+}
+
+.homepage-image{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  overflow: hidden;
+}
+
+.homepage-image:hover{
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+img{
+  /* width: 100%; */
+  height: 100%;
+}
 
 
+.homepage-right-center-content{
+  display: block;
+  text-align: bottom;
+  color: #f1f3f2;
+  font-size: 2vw;
+  padding: 30% 10%;
+  /* line-height: 45px; */
+  /* padding-top: 30px; */
+  transform: scale(1,1.8);
+  /* font-stretch: extra-condensed; */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  transition-property: all;
+}
+
+.homepage-right-center-content:hover{
+  color: #307179;
+  /* font-stretch: extra-condensed; */
+  text-align: right;
+  transition-duration: 3s;
+  transition-timing-function: ease-out;
+  transition-property: all;
+}
+
+.homepage-right-center:hover{
+  background-color: #f1f3f2;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+  transition-property: all;
+}
