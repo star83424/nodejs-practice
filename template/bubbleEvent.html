@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <ul id="list">
+    <li id="list_item">
+      <a id="list_item_link" target="_blank" href="http://google.com">
+        google.com
+      </a>
+    </li>
+  </ul>
+</body>
+</html>
+
+<script>
+const get = (id) => document.getElementById(id);
+const $list = get('list');
+const $list_item = get('list_item');
+const $list_item_link = get('list_item_link');
+  
+// list 的捕獲
+$list.addEventListener('click', (e) => {
+  console.log('list capturing 1-1', e.eventPhase);
+  
+}, true)
+  
+// list 的冒泡
+$list.addEventListener('click', (e) => {
+  console.log('list bubbling', e.eventPhase);
+}, false)
+  
+// list_item 的捕獲
+$list_item.addEventListener('click', (e) => {
+  console.log('list_item capturing', e.eventPhase);
+  e.preventDefault();
+}, true)
+
+// list 的捕獲
+$list.addEventListener('click', (e) => {
+  console.log('list capturing 1-2');
+}, true)
+  
+// list 的捕獲 2
+$list.addEventListener('click', (e) => {
+  console.log('list capturing 1-3');
+}, true)
+  
+// list_item 的冒泡
+$list_item.addEventListener('click', (e) => {
+  console.log('list_item bubbling', e.eventPhase);
+}, false)
+  
+// list_item_link 的捕獲
+$list_item_link.addEventListener('click', (e) => {
+  console.log('list_item_link capturing', e.eventPhase);
+}, true)
+  
+// list_item_link 的冒泡
+$list_item_link.addEventListener('click', (e) => {
+  console.log('list_item_link bubbling', e.eventPhase);
+}, false)
+</script>
